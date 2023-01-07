@@ -1,0 +1,43 @@
+GET http://localhost:5000/todos/?status=TO%20DO
+
+###
+
+GET http://localhost:5000/todos/?priority=HIGH
+
+###
+
+GET http://localhost:5000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+###
+
+GET http://localhost:5000/todos/?search_q=Play
+
+###
+
+GET http://localhost:5000/todos/5/
+###
+
+
+POST http://localhost:5000/todos/
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+
+###
+
+PUT http://localhost:5000/todos/1/
+Content-Type: application/json
+
+{
+   "status": "DONE"
+}
+
+
+
+
+
